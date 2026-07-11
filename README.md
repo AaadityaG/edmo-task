@@ -8,8 +8,8 @@ The agent uses **LangChain** with **OpenRouter** (GPT-4o-mini) and three tools:
 
 | Tool | Input | Returns |
 |------|-------|---------|
-| `get_program_info` | program name | Duration, tuition, prerequisites |
-| `check_application_status` | applicant ID | Status, next step, pending documents |
+| `get_program_info` | program name | Duration, tuition, prerequisites, pending documents |
+| `check_application_status` | applicant ID | Status, next step |
 | `get_deadlines` | program name | Application, document, and decision deadlines |
 
 The agent loop receives a user message, reasons about which tool(s) to call, executes them, and formulates a natural language response. It supports multi-turn conversation and remembers context within a session.
