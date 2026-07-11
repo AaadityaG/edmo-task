@@ -61,7 +61,7 @@ cp .env.example .env
 Then edit `.env` and add your OpenRouter API key:
 
 ```
-OPENAI_API_KEY=your-openrouter-api-key
+OPENAI_API_KEY=your-openrouter-api-key-or-openai-key
 ```
 
 To enable Langfuse tracing (optional), uncomment and fill in the Langfuse keys in `.env`.
